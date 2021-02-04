@@ -85,12 +85,8 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_db',
-        'USER': 'kai',
-        'PASSWORD': 'dream',
-        'HOST': 'localhost',
-        'PORT': '',                      # Set to empty string for default.
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db_sqlite3',
     }
 }
 
@@ -150,9 +146,3 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config.get('EMAIL_USER')
 #EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 EMAIL_HOST_PASSWORD = config.get('EMAIL_PASS')
-
-
-#GMAIL_API_CLIENT_ID = '740529545955-frsiae2jraff018n0626aifnte9mtumo.apps.googleusercontent.com'
-#GMAIL_API_CLIENT_SECRET = 'M_mEhnqW0m7aJYXPsfT6aKjS'
-#GMAIL_API_REFRESH_TOKEN = '1//0eWvA4B2G2q0hCgYIARAAGA4SNwF-L9IrGQu_KiSJC3WbKUw6XGnzfOXIPwIdju-bWmuOm7wzB5ToGWNsLt09A-RixSUYojsQ#ulY'
-#django_heroku.settings(locals())
