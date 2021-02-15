@@ -31,7 +31,7 @@ SECRET_KEY = config['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.superkai.tk', 'superkai.tk', '54.250.241.231']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
