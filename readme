@@ -1,1 +1,2 @@
 Don't need to run "python manage.py collectstaic".
+Put config.json to '/etc/config.json'.
