@@ -1,8 +1,6 @@
 import os
 import json
 from pathlib import Path
-with open('/etc/config.json') as config_file:
-    config = json.load(config_file)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,9 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = '#d!wu7ybgpbem38&tj!*5con+)+tdsfpa=l*ugrp6d!81rwdxp'
-#SECRET_KEY = os.environ.get('SECRET_KEY')
-SECRET_KEY = config['SECRET_KEY']
+SECRET_KEY = 'abcdefg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -34,7 +30,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'gmailapi_backend',
 ]
 
 MIDDLEWARE = [
@@ -129,5 +124,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = config.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = config.get('EMAIL_PASS')
+EMAIL_HOST_USER = 'example@gmail.com'
+EMAIL_HOST_PASSWORD = 'example'
