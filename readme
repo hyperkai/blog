@@ -1,2 +1,11 @@
-Don't need to run "python manage.py collectstaic".
-Put config.json to '/etc/config.json'.
+Don't run "python manage.py collectstaic" otherwise error occurs.
+
+--- On settings.py: ----------------------------------------------------
+Change "SECRET_KEY = 'abcdefg'" to different secret key for secure.
+
+Replace "EMAIL_HOST_USER = 'example@gmail.com'" with your email address.
+
+Replase "EMAIL_HOST_PASSWORD = 'example'" with your email password.
+------------------------------------------------------------------------
+
+Python 3.8.5 is recommended to use but the above versions will be fine.
