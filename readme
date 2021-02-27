@@ -1,3 +1,4 @@
+The version "Python 3.8.5" is recommended to use but the above versions will be fine.
 Don't run "python manage.py collectstaic" otherwise error occurs.
 
 --- On settings.py: ----------------------------------------------------
@@ -8,8 +9,6 @@ Replace "EMAIL_HOST_USER = 'example@gmail.com'" with your email address. <-- Lin
 
 Replase "EMAIL_HOST_PASSWORD = 'example'" with your email password. <-- Line 127 (Needed for "Reset Password")
 ------------------------------------------------------------------------
-
-Using the version "Python 3.8.5" is recommended to use but the above versions will be fine.
 
 If you use gmail, do 2 things below to get over very strong google's security.
 
