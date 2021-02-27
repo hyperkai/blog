@@ -12,6 +12,8 @@ Python 3.8.5 is recommended to use but the above versions will be fine.
 
 If you use gmail, do 2 things below to get over very strong google's security.
 
-1. Allow less secure apps: ON ---> https://myaccount.google.com/lesssecureapps
+1. Allow less secure apps: ON ↓↓↓ 
+https://myaccount.google.com/lesssecureapps
 
-2. Allow access to your Google account: ON (Tap "Continue") ---> https://accounts.google.com/DisplayUnlockCaptcha
+2. Allow access to your Google account: ON (Tap "Continue") ↓↓↓
+https://accounts.google.com/DisplayUnlockCaptcha
